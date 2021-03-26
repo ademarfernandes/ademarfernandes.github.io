@@ -1,0 +1,257 @@
+/*
+ESTRUTURA BASE
+==============
+1- DECLARAÇÃO DE VARIÁVEIS
+2- ESTILOS GERAIS
+3- BODY
+4- HEADER
+5- FOOTER
+6- PÁGINA INICIAL
+7- EXTRAS
+8- @MEDIA
+*/
+
+/* DECLARAÇÃO DE VARIÁVEIS */
+:root{
+    --max-width-padrao: 1125px;
+    --cor-frente-padrao: rgb(212, 116, 5);
+
+    --cor-background-primaria: cadetblue;
+    --cor-background-secundaria: #04133d;
+    --cor-background-header-footer: white;
+    --cor-texto-primaria: #636363;
+    --cor-texto-secundaria: black;
+    --cor-botao-dark-mode: #d4e9ff;
+}
+
+/* ESTILOS GERAIS */
+html, body, figure, img, div, input, textarea, p, a, h1, h2, h3, h4, h5, h6, ul, li, main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.coluna{
+    flex-basis: 49%;
+}
+
+.hidden{
+    display: none;
+}
+
+/* BODY */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color: var(--cor-background-primaria);
+    padding: 30px 30px 0;
+}
+header .container{
+    background-color: var(--cor-background-header-footer);
+    padding-bottom: 15px;
+}
+header .linha{
+    align-items: center;
+}
+header .coluna{
+    text-align: center;
+}
+header .coluna-esquerda{
+    flex-basis: 30%;
+}
+header .coluna-direita{
+    flex-basis: 70%;
+}
+header .coluna figure{}
+header .coluna img{
+    max-width: 70%;
+}
+header .coluna h1{
+    font-size: 2rem;
+    color: var(--cor-texto-secundaria);
+}
+header .coluna p{
+    font-size: 1rem;
+    color: var(--cor-texto-primaria);
+}
+header .coluna ul{
+    margin: 15px 0 0;
+}
+header .coluna ul li{
+    margin: 0 0 5px;
+}
+header .coluna ul li a{
+    font-size: 1rem;
+    color: var(--cor-texto-secundaria);
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--cor-background-secundaria);
+}
+footer .container{
+    padding: 20px;
+}
+footer nav{}
+footer nav ul{
+    margin: 20px;
+}
+footer nav ul li{}
+footer nav ul li a{
+    color: var(--cor-background-header-footer);
+}
+footer nav .info-contato{}
+footer nav .info-contato li{
+    margin: 0 0 10px;
+}
+footer nav .info-contato li a{}
+footer nav .redes-sociais{
+    border-top: 1px solid rgb(255 255 255 / 40%);
+    margin: 30px 0 20px;
+    padding: 30px 0 0;
+    text-align: center;
+}
+footer nav .redes-sociais li{
+    margin: 10px 15px;
+    text-align: center;
+    display: inline-block;
+}
+footer nav .redes-sociais li a{}
+footer nav .redes-sociais li a img{
+    width: 30px;
+}
+footer nav .redes-sociais li a img p{}
+
+/* PÁGINA INICIAL */
+main{}
+main .container{}
+main .linha{}
+main .coluna{
+    padding: 20px;
+}
+main .coluna-esquerda{}
+main .coluna-direita{}
+main .coluna section{
+    border-bottom: 1px solid var(--cor-botao-dark-mode);
+    margin: 0 0 20px;
+    min-height: 154px;
+    color: var(--cor-texto-secundaria);
+}
+main .coluna section h2{
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+}
+main .coluna section p{
+    font-size: 0.9rem;
+    color: var(var(--cor-texto-primaria));
+    line-height: 1.5;
+}
+main .coluna section ul{}
+main .coluna section ul li{
+    margin: 0 0 10px;
+}
+main .coluna section ul li h3{
+    font-size: 1.2rem;
+}
+main .coluna section ul li strong{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 5px 0 10px;
+    display: inline-block;
+}
+main .coluna section ul li p{}
+
+/* EXTRAS */
+/* === FINAL DO COMENTÁRIO ===
+.ativar-dark{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+header .container{
+    position: relative;
+}
+label{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 52px;
+    height: 30px;
+    background-color: var(--cor-background-secundaria);
+    border-radius: 20px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+label span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: var(--cor-botao-dark-mode);
+    border-radius: 100%;
+    transition: all ease .3s;
+}
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: var(--cor-botao-dark-mode);
+}
+.ativar-dark:checked ~ .dark-mode label span{
+    background-color: var(--cor-background-secundaria);
+    transform: translateX(22px);
+    transition: all ease .3s;
+}
+.ativar-dark:checked ~ .dark-mode{
+    --cor-background-primaria: black;
+    --cor-background-secundaria: #000;
+    --cor-texto-primaria: white;
+    --cor-texto-secundaria: #fff;
+}
+.ativar-dark:checked ~ .dark-mode header{
+    background-color: var(--cor-background-secundaria);
+}
+.ativar-dark:checked ~ .dark-mode header .container{
+    background-color: var(--cor-background-secundaria);
+}
+.ativar-dark:checked ~ .dark-mode main{
+    background-color: var(--cor-background-secundaria);
+}
+=== FINAL DO COMENTÁRIO === */
+
+/* @MEDIA */
+/* Utilizar neste trecho todo código para formataçao de telas maiores que 768px */
+@media only screen and (min-width: 768px){
+    .container{
+        width: 100%;
+        max-width: var(--max-width-padrao);
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    header{
+        padding: 30px 0 0;
+    }
+    header .coluna img{
+        max-width: 120%;
+        border-radius: 100%;
+    }
+        footer nav .redes-sociais{
+        display: flex;
+        justify-content: center;
+    }
+    main .coluna{
+        padding: 0;
+    }
+    main .coluna section{
+        border: 1px solid var(--cor-botao-dark-mode);
+        padding: 20px;
+    }
+}
